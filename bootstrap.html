@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    .carousel-inner {
+        height: auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+<body>
+    <h1 style="background-color: black; color :white;">Shoes - go ahead</h1>
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary" style="border: 5px solid rgb(11, 5, 5);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="order"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">card</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">.</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHNob2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" width="500" height="600" alt="...">
+                <h2>Red shoes : puma</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbnMlMjBzaG9lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" width="500" height="600" alt="...">
+                <h2>Green shoes : Nike</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjBzaG9lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" width="500" height="600" alt="...">
+                <h2>Blue shoes : Nike</h2>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-4">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="data:image/png;base64,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"
+                    width="100" height="100">
+                <div class="card-body" Puma SE, branded as PUMA, is a German multinational corporation that designs and
+                    manufactures athletic and casual footwear, apparel and accessories, which is headquartered in
+                    Herzogenaurach, Bavaria, Germany. Puma is the third largest sportswear manufacturer in the world.[5]
+                    The company was founded in 1948 by Rudolf Dassler (1898–1974). In 1924, Rudolf and his brother
+                    Adolf "Adi" Dassler had jointly formed the company Gebrüder Dassler Schuhfabrik ('Dassler Brothers
+                    Shoe Factory'). The relationship between the two brothers deteriorated until they agreed to split in
+                    1948, forming two separate entities, Adidas and Puma. Following the split, Rudolf originally
+                    registered the newly established company as Ruda (derived from Rudolf Dassler, as Adidas was based
+                    on Adi Dassler), but later changed the name to Puma. Puma's earliest logo consisted of a square and
+                    beast jumping through a D, which was registered, along with the company's name, in 1948. Puma's shoe
+                    and clothing designs feature the Puma logo and the distinctive "Formstrip" which was introduced in
+                    1958.[6] <p class="card-text">Puma SE, branded as PUMA, is a German multinational corporation that
+                    designs and manufactures athletic and casual footwear, apparel and accessories, which is
+                    headquartered in Herzogenaurach, Bavaria, Germany. Puma is the third largest sportswear manufacturer
+                    in the world.[5] The company was founded in 1948 by Rudolf Dassler (1898–1974). In 1924, Rudolf and
+                    his brother Adolf "Adi" Dassler had jointly formed the company Gebrüder Dassler Schuhfabrik
+                    ('Dassler Brothers Shoe Factory'). The relationship between the two brothers deteriorated until they
+                    agreed to split in 1948, forming two separate entities, Adidas and Puma.
+
+                    Following the split, Rudolf originally registered the newly established company as Ruda (derived
+                    from Rudolf Dassler, as Adidas was based on Adi Dassler), but later changed the name to Puma. Puma's
+                    earliest logo consisted of a square and beast jumping through a D, which was registered, along with
+                    the company's name, in 1948. Puma's shoe and clothing designs feature the Puma logo and the
+                    distinctive "Formstrip" which was introduced in 1958.[6].</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card shadow-sm">
+            <img src="data:image/jpeg;base64,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"
+                width="100" height="100">
+            <div class="card-body">
+                <p class="card-text">Nike, Inc.[note 1] is an American multinational corporation that is engaged in the
+                    design, development, manufacturing, and worldwide marketing and sales of footwear, apparel,
+                    equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the
+                    Portland metropolitan area.[4] It is the world's largest supplier of athletic shoes and apparel and
+                    a major manufacturer of sports equipment, with revenue in excess of US$46 billion in its fiscal year
+                    2022.[5][6]
+
+                    The company was founded on January 25, 1964, as "Blue Ribbon Sports", by Bill Bowerman and Phil
+                    Knight, and officially became Nike, Inc. on May 30, 1971. The company takes its name from Nike, the
+                    Greek goddess of victory.[7] Nike markets its products under its own brand, as well as Nike Golf,
+                    Nike Pro, Nike+, Air Jordan, Nike Blazers, Air Force 1, Nike Dunk, Air Max, Foamposite, Nike
+                    Skateboarding, Nike CR7,[8] and subsidiaries including Air Jordan and Converse. Nike also owned
+                    Bauer Hockey from 1995 to 2008, and previously owned Cole Haan, Umbro, and Hurley International.[9]
+                    In addition to manufacturing sportswear and equipment, the company operates retail stores under the
+                    Niketown name. Nike sponsors many high-profile athletes and sports teams around the world, with the
+                    highly recognized trademarks of "Just Do It" and the Swoosh logo..</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
